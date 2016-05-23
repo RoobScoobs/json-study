@@ -22,7 +22,7 @@ or otherwise treating JSON as if it is a JavaScript object literal, is a common
 source of hard-to-debug errors.
 
 JSON cannot have methods, since it is a data exchange format. Since it only
-represents data, it cannot have behavior. It cannnot have behavior because it is
+represents data, it cannot have behavior. It cannot have behavior because it is
 not an object.
 
 JSON only looks like an object. It is not an object.
@@ -38,7 +38,13 @@ As it makes sense to you please write the following in JSON format:
 - Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{"jason" : {
+  "cat" : "Mr.Kitty",
+  "roommates" : ["Dave", "Miller"],
+  "sportsTeams" : ["Red Sox", "Patriots", "Bruins"],
+  "placesLived" : ["123 Fake street", "2 Muchinfo Road"]
+}
+}
 ```
 
 ...I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +52,24 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{"jason" : {
+  "cat" : "Mr.Kitty",
+  "roommates" : [
+    {
+      "dave" : {
+        "goldfish" : {
+          "bob" : "red",
+          "mr.magicnibbles" : "yellow"
+        },
+      },
+        },  
+        "Miller"],
+  "sportsTeams" : ["Red Sox", "Patriots", "Bruins"],
+  "placesLived" : ["123 Fake street", "2 Muchinfo Road"]
+  }
+}
+
+
 ```
 
 ## JSON Methods
@@ -54,7 +77,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+JSON cannot have methods.
 ```
 
 ## JSON Comments
@@ -62,5 +85,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+JSON cannot have comments.
 ```
